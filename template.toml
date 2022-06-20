@@ -1,0 +1,96 @@
+name = "Django"
+description = "A fully-featured Django template"
+kickstart_version = 1
+# ignore = [
+#     "README.md",
+#     "CONTRIBUTING.md",
+#     ".travis.yml",
+#     "docs",
+# ]
+# copy_without_render = [
+#     "*.html",
+# ]
+# cleanup = [
+#     { name = "spa", value = true, paths = ["{{ project_name}}/templates/"]},
+#     { name = "auth_method", value = "none", paths = ["{{ project_name}}/docs/auth.md"]},
+# ]
+
+[[variables]]
+name = "project-name"
+default = "some-project"
+prompt = "What is the name of this project?"
+validation = "^([a-zA-Z][a-zA-Z0-9_-]+)$"
+
+[[variables]]
+name = "input"
+prompt = "What is the function name of this problem?"
+
+[[variables]]
+name = "input_type"
+prompt = "What is the type of input?"
+
+[[variables]]
+name = "input_type"
+prompt = "What is the type of input?"
+
+[[variables]]
+name = "function_result"
+prompt = "What is the type of function result?"
+
+# validation = "^([a-zA-Z][a-zA-Z0-9_-]+)$"
+
+# [[variables]]
+# name = "database"
+# default = "postgres"
+# prompt = "Which database do you want to use?"
+# choices = ["postgres", "mysql", "sqlite"]
+
+# [[variables]]
+# name = "pg_version"
+# default = "10.4"
+# prompt = "Which version of Postgres?"
+# choices =  [
+#     "10.4",
+#     "10.3",
+#     "10.2",
+#     "10.1",
+#     "9.6",
+#     "9.5",
+#     "9.4",
+#     "9.3",
+# ]
+# only_if = { name = "database", value = "postgres" }
+
+# [[variables]]
+# name = "auth_method"
+# default = "jwt"
+# prompt = "How are users going to be authenticated?"
+# choices = ["jwt", "sessions", "none"]
+
+# [[variables]]
+# name = "sentry"
+# default = true
+# prompt = "Do you want to add Sentry integration?"
+
+# [[variables]]
+# name = "spa"
+# default = false
+# prompt = "Is the frontend a SPA?"
+
+# [[variables]]
+# name = "js_framework"
+# default = "React"
+# prompt = "Which JS framework do you want to setup?"
+# choices =  [
+#     "React",
+#     "Angular",
+#     "Vue",
+#     "None",
+# ]
+# only_if = { name = "spa", value = true }
+
+# [[variables]]
+# name = "typescript"
+# default = true
+# prompt = "Do you want to use TypeScript?"
+# only_if = { name = "spa", value = true }
