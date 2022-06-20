@@ -22,20 +22,24 @@ prompt = "What is the name of this project?"
 validation = "^([a-zA-Z][a-zA-Z0-9_-]+)$"
 
 [[variables]]
-name = "input"
+name = "function_name"
+default = "solution"
 prompt = "What is the function name of this problem?"
 
 [[variables]]
-name = "input_type"
-prompt = "What is the type of input?"
+name = "input"
+default = "input"
+prompt = "What is the name of the input variable?"
 
 [[variables]]
 name = "input_type"
+default = "i32"
 prompt = "What is the type of input?"
 
 [[variables]]
 name = "function_result"
-prompt = "What is the type of function result?"
+default = "bool"
+prompt = "What is the result type of the function?"
 
 # validation = "^([a-zA-Z][a-zA-Z0-9_-]+)$"
 
