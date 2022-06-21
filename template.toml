@@ -1,12 +1,12 @@
-name = "Django"
-description = "A fully-featured Django template"
+name = "leetcode"
+description = "Leetcode problem template rust sub-package"
 kickstart_version = 1
-# ignore = [
-#     "README.md",
-#     "CONTRIBUTING.md",
-#     ".travis.yml",
-#     "docs",
-# ]
+ignore = [
+    "README.md",
+    "CONTRIBUTING.md",
+    ".travis.yml",
+    "docs",
+]
 # copy_without_render = [
 #     "*.html",
 # ]
@@ -17,29 +17,33 @@ kickstart_version = 1
 
 [[variables]]
 name = "project-name"
-default = "some-project"
-prompt = "What is the name of this project?"
+default = "two-sum-2"
+prompt = "What is the name of this problem package?"
 validation = "^([a-zA-Z][a-zA-Z0-9_-]+)$"
 
 [[variables]]
 name = "function_name"
 default = "solution"
 prompt = "What is the function name of this problem?"
+validation = "^([a-zA-Z][a-zA-Z0-9_-]+)$"
+
 
 [[variables]]
 name = "input"
-default = "input"
+default = "nums"
 prompt = "What is the name of the input variable?"
 
 [[variables]]
 name = "input_type"
-default = "i32"
+default = "Vec<i32>"
 prompt = "What is the type of input?"
 
 [[variables]]
-name = "function_result"
+name = "function_result_type"
 default = "bool"
-prompt = "What is the result type of the function?"
+prompt = "What is the type of the result of the function?"
+
+
 
 # validation = "^([a-zA-Z][a-zA-Z0-9_-]+)$"
 
